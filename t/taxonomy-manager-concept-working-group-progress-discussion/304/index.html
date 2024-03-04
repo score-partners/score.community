@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Taxonomy Manager – Concept &amp; working group progress discussion</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">Taxonomy Manager – Concept &amp; working group progress discussion</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/12_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">pjppauwels</div>
+          <div class="post_content">
+<p>LAB9K at Digipolis Ghent has been experimenting with creating a taxonomy tool for Open City Data. This has been a challenge for quite a while and it seemed this might be a decent meta solution to a lot of partner cities. The main idea is that this tool contains all the necessary taxonomies and relations between those to see how the open data is structured.</p>
+<p>The tool itself is based upon the SKOS specification, defined by W3C <a href="https://www.w3.org/TR/2005/WD-swbp-skos-core-spec-20051102/" rel="nofollow noopener">https://www.w3.org/TR/2005/WD-swbp-skos-core-spec-20051102/</a> and shows</p>
+<p>Atramhasis is an online SKOS editor. This web-application enables users to create SKOS vocabularies consisting of Concepts and Collections. It tries to stay close to the SKOS specification. This makes it suited for different types of vocabularies such as simple pick lists, authority files, flat lists and basic to relatively complex thesauri.</p>
+<p>It’s not completely new, it’s based upon an open editor created by Onroerend Erfgoed Vlaanderen (EN: immovable(?) heritage Flanders)</p>
+<p>First Ghent version: <a href="https://atram.lab9k.gent/" rel="nofollow noopener">https://atram.lab9k.gent/</a><br/>
+Existing codebase: <a href="https://github.com/OnroerendErfgoed/atramhasis" rel="nofollow noopener">https://github.com/OnroerendErfgoed/atramhasis</a><br/>
+Documentation: <a href="http://atramhasis.readthedocs.io/" rel="nofollow noopener">http://atramhasis.readthedocs.io/</a></p>
+<p>What do you think? Have an alternative at your city? Or best practice?<br/>
+Let us know!</p>
+<p>Kind regards,<br/>
+Pieter-Jan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>This working group proposal is one of the proposals from Ghent we have analysed more in depth + actualised using the “working group proposal” template.</p>
+<p>Updated title: <strong>Linked Open Data Taxonomy Manager</strong><br/>
+See <a href="https://docs.google.com/document/d/1KNmVSjTFoZ63Rh811q4UMhchgQi56Kx5UZpLpHhHd70/edit" rel="nofollow noopener">this doc in shared drive</a> for additional information about the initiative.</p>
+<p>(Background information on template used: <a href="https://score.community/t/partnership-update-overview-of-activity-for-september-october-and-november-2018/493/8">Partnership Update: Overview of activity for September, October and November 2018</a>)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>At one of our final sessions of the meeting last week (WP next steps), the concept of linked open data was discussed. There seemed to be interest among several cities (Ghent, Bradford University, Aarhus, others?) for working on identifying relevant and useful solutions within the concept of linked open data in SCORE.</p>
+<p>Therefore, allow me to bump this workgroup proposal from Ghent about a taxonomy manager for linked open data. Such a manager would facilitate a common vocabulary (terms + relations between these words) among different partner cities (cfr. the gritting / salting example). Its impact would potentially even reach beyond SCORE, as it would provide its resulting data and tools as a starting point for non-SCORE cities.</p>
+<p>Especially when we came to one of the core questions: <em>“Which kind of challenges are the ones that truly depend on the multi-city perspective and mutual benefits to be kickstarted?”</em>, it are challenges such as these that come to mind.</p>
+<p>Other option: in a working group we could ofcourse explore this linked open data challenge a bit broader, and identify other potential solutions based on the actual linked open data ambitions of all interested partners.</p>
+<p><strong>What does it do?</strong></p>
+<p>The tool allows cities to create and manage taxonomies, lists of words, including each word’s definition and how words relate to each other in the city context. Such taxonomies are typically used as exchangeable backend and frontend data structures for database indexing, retrieval, filtering, selection, navigation etc. The tool acts as a data framework, integrating very well with other open source systems and modules. However, and more importantly for the City of Ghent, the use of such taxonomies also enables city departments to provide their open data (privately and publicly) as linked data, enabling not only linking the different types of data that live within departments, but increasingly facilitating the exchange of data in between departments and even in between different cities or different levels of government. All of this is made possible because the data structure allows to define how different terms (and thereby different pieces of data) relate to each other in the city’s context.</p>
+<p><strong>What does it solve?</strong></p>
+<p>It allows for structure and unity in data formats among different city stakeholders (eg. different city departments, different cities, citizens, different backend and frontend technologies used, …) Dealing with this important obstacle, it facilitates collaborations among these stakeholders when they intend to exchange and provide data openly and link different pieces of data together.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/58_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">turegjorup</div>
+          <div class="post_content">
+<p><span class="mention">@timvanachte</span> Sounds interesting, and linked data is definably a topic we’ll be watching. But right now, we don’t have manpower to commit to development on this.</p>
+<p>However, if you decide to work on this we might be able to participate as a “validating partner”, meaning we’ll provide feedback and test the solution.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>Good to know <span class="mention">@turegjorup</span>, thanks. We’ll wait for other interested partners (30 days we agreed on for a reaction was it? <img alt=":wink:" class="emoji" src="../../../images/wink.png" title=":wink:"/> ) in, indeed, the different possible roles: co-developer, replicator, tester, giver of feedback or just follower. I’ll let you know if an initiative related to linked data is starting.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">dhaval</div>
+          <div class="post_content">
+<p>HI <span class="mention">@timvanachte</span>, indeed. Thanks for initiating this. We are interested in this initiative from the perspective of building on existing taxonomies/ontologies to help SCORE partners to publish or use more of linked data. I look forward to more discussion on this topic. Thanks Dhaval <span class="mention">@rayemson</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>Hi <span class="mention">@turegjorup</span> and <span class="mention">@dhaval</span></p>
+<p>Based on your reactions here I took the liberty of setting your status (Aarhus and Bradford University) to ‘Yes, as follower’ for the Taxonomy Manager proposal in the <a href="https://score.community/t/dashboard-sheet-for-pending-new-workgroup-proposals-based-on-existing-solutions/646">solution proposal dashboard</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>Ghent has decided to start developing this, in collaboration with the two follower partners. Of course anyone can still join later.</p>
+<p>By working on this taxonomy manager we’ll also try to get partners as convinced as us that taxonomy management is a key element for enabling connections between open source components, data flows and eventually between cities.</p>
+<p><span class="mention">@claus</span> <span class="mention">@Boris</span> Can a working group be created on the community where we can kickstart this initiative? First step will be ofcourse to develop a work plan based on the template.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p><span class="mention">@timvanachte</span> done</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>The Taxonomy Tool was demo’ed and discussed by <span class="mention">@Jefwillems</span> and me at a working table at the partner meeting in Aarhus, together with <span class="mention">@turegjorup</span> <span class="mention">@nicole.schubbe</span> <span class="mention">@Vbyrne</span>, Kim Søvsø from Aarhus, and <span class="mention">@JoranVD</span> <span class="mention">@Justine</span></p>
+<p>Thank you all for joining and contributing to the results below:</p>
+<p><strong>Use cases/ideation</strong></p>
+<ul>
+<li>Identify where there is most need for more understandable, ‘common terminology’ towards citizens (structure information in a way that it makes sense “in daily life” rather than the way a local authority happens to be organized)</li>
+<li>Align along smart cities up similar information structures we use in web portals, web sites, applications. Share (translated versions of) the taxonomies we use, adapt to each other’s insights. Provide more similar facet navigation in open data portals across countries. (Hamburg)</li>
+<li>Develop a taxonomy for richer tagging of open datasets, so dataset/data portal responsibles can more efficiently handle repeatedly incoming questions on availability of data “Does our city have data on …?” Combine with the SCORE visualiser tool? (Hamburg, Ghent)</li>
+<li>Align taxonomy filters/faceted navigation for open datasets, both as internal tagging as external public tagging use case (Aarhus, Hamburg, Ghent)</li>
+<li>Improve (title/label) search in applications thanks to underlying taxonomy that is made ready to ‘capture’ and map common search terms to the right results</li>
+</ul>
+<p>Use cases within SCORE:</p>
+<ul>
+<li>Scan ongoing and emerging SCORE solutions on need for common terminology (one solution will be more suitable than the other, taxonomy should not be overkill but make life easier)</li>
+<li>Keep possibilities of taxonomies in mind, spotting opportunities when challenge working groups go in ideation coming months</li>
+</ul>
+<p><strong>Barriers identified</strong></p>
+<ul>
+<li>One or more key users needed in your organisation that know how tool works, and combines this with coordinating the offline workflow (organise brainstorms, meetings, converging to the actual agreed taxonomy)</li>
+<li>When to convince to use the tool and not traditional tools (eg Excel): at which point does it have added value to just using Google Sheets?</li>
+<li>Scan our portfolio of applications and find a taxonomy complex enough to work on (At which point is a full blown taxonomy needed? At which point is structured open data valuable enough to efforts put in?)</li>
+</ul>
+<p><strong>Possible backlog items/open source contributions &amp; features</strong></p>
+<ul>
+<li>Authentication layer/mechanism after ‘Admin’ click (to protect the data entered)</li>
+<li>Create new taxonomy as user, not as coder</li>
+<li>Import existing data structures (rework), eg. Hamburg open data portal, a) as user, not as coder b) import a static file, not URL</li>
+</ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

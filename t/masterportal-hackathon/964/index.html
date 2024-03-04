@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Masterportal Hackathon</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">Masterportal Hackathon</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p>One of the results in our Masterportal Working Table (please find the recording <a href="https://drive.google.com/file/d/1-JFfuopB1c5nkh8_upttkq_9nPQwnpLb/view?usp=sharing" rel="nofollow noopener">here</a>) was to have a Hackathon for those who are interested to replicate the Masterportal. Thanks Claus for the idea of the Hackathon and Tim for the spontaneous idea to replicate our solution for the sheep tracking. I am sure, that there is potential for more ideas in the SCORE project. If you have no concrete idea yet you can still join and the test data.</p>
+<p>I created a doodle to check your availability and find a time that fits most of you. Please let us know your interest and availability until October 10th, 2020.</p>
+<aside class="onebox allowlistedgeneric">
+<header class="source">
+<img class="site-icon" height="32" src="../../../images/acb5620ec765a844e0d95a9ed3f8779986ad49de.png" width="32"/>
+<a href="https://doodle.com/poll/fihrsedqchvacie7" rel="nofollow noopener" target="_blank">doodle.com</a>
+</header>
+<article class="onebox-body">
+<div class="aspect-image" style="--aspect-ratio:300/200;"><img class="thumbnail" height="200" src="../../../images/3f432f4266966ed50e09472900d36239793337a1.png" width="300"/></div>
+<h3><a href="https://doodle.com/poll/fihrsedqchvacie7" rel="nofollow noopener" target="_blank">Doodle: Masterportal Hackathon</a></h3>
+<p>Doodle is the simplest way to schedule meetings with clients, colleagues, or friends. Find the best time for one-to-ones and team meetings with our user-friendly calendar tool. Get started today!</p>
+</article>
+<div class="onebox-metadata">
+</div>
+<div style="clear: both"></div>
+</aside>
+<p>Nicholas and I prepared some information and requirements for you. I you need assistance please let us know.</p>
+<p><strong>Goal:</strong></p>
+<p>The goal of this Hackathon is a working (simple) Masterporal on the participants Server. We will use one/two central services for all participants to avoid some pitfalls.</p>
+<p><strong>Content of the workshop:</strong></p>
+<ul>
+<li>
+<p>Download from Bitbucket</p>
+</li>
+<li>
+<p>Configuration of the Masterportal</p>
+</li>
+<li>
+<p>Adding new services</p>
+</li>
+<li>
+<p>Configuration of the GUI</p>
+</li>
+<li>
+<p>Finding other tools</p>
+</li>
+</ul>
+<p><strong>Technical requirements:</strong></p>
+<p>In the run-up to the Hackathon, please check with the system administrator whether your server fulfils all requirements. If you have any questions about the technical requirements in your city/organisation please contact <a href="mailto:nicholas.schliffke@dataport.de">nicholas.schliffke@dataport.de</a> <strong>until 23.10.2020</strong> .</p>
+<p><strong>Internet access</strong></p>
+<p><strong>Web server</strong></p>
+<p>We recommended to use an Apache web server. Ideally, this is already configured to provide content via the https protocol, otherwise, for example, the LocationAPI will not be available and user positioning will not be possible. If the server should also work as a proxy, it must be able to access the geo-services to be included. If the PHP proxy is to be used, PHP must be activated. If a direct access of the client to the geo-services is allowed, a proxy is normally not necessary.</p>
+<p><strong>Geo-services</strong></p>
+<p>For the Hackathon, we will use a central service for all. If you finish early, you can start including your own services (e.g. WMS or WFS). We also recommend to check which public services in your city/country you may want to include in the future.</p>
+<p>We also recommended to set a CORS rule (Access-Control-Allow-Origin: “*”) for your own services so that every client can access the data directly.</p>
+<p>I hope, that we will find some interested people J</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">schlifni</div>
+          <div class="post_content">
+<p>A next step would be to decide on what data to use. What kind of services does the sheep monitoring run on? And did I understand correctly that Bradford could also provide a service or two?<br/>
+Would you be able to send me the URLs for these services, so I can test them in Advance?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p>As back up data we could use the Base Map of the World from the Federal Agency for Cartography and Geodesy that we could use (<strong>WMS</strong>): <a href="https://sgx.geodatenzentrum.de/wms_topplus_open" rel="nofollow noopener">https://sgx.geodatenzentrum.de/wms_topplus_open</a><br/>
+More information can be found here: <a href="https://gdz.bkg.bund.de/index.php/default/catalog/product/view/id/1056/s/wms-topplusopen-mit-layer-fur-normalausgabe-und-druck-wms-topplus-open/category/30/?___store=default" rel="nofollow noopener">https://gdz.bkg.bund.de/index.php/default/catalog/product/view/id/1056/s/wms-topplusopen-mit-layer-fur-normalausgabe-und-druck-wms-topplus-open/category/30/?___store=default</a></p>
+<p>and the CORINE Land Cover 2018 (<strong>WMS</strong>):<br/>
+<a class="onebox" href="https://image.discomap.eea.europa.eu/arcgis/services/Corine/CLC2018_WM/MapServer/WMSServer" rel="nofollow noopener" target="_blank">https://image.discomap.eea.europa.eu/arcgis/services/Corine/CLC2018_WM/MapServer/WMSServer</a><br/>
+More information can be found here: <a href="https://land.copernicus.eu/pan-european/corine-land-cover/clc2018" rel="nofollow noopener">https://land.copernicus.eu/pan-european/corine-land-cover/clc2018</a></p>
+<p>But it would be great to work with some of your data!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p><span class="mention">@sydsimpson</span> and <span class="mention">@timvanachte</span> could you provide some test data (WMS/WFS) for the Hackathon?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>Links: (Dutch)</p>
+<ul>
+<li>Information page <a href="https://data.stad.gent/explore/dataset/sheep-tracking-gent/information/">https://data.stad.gent/explore/dataset/sheep-tracking-gent/information/</a>
+</li>
+<li>(Near) Realtime JSON API <a href="https://data.stad.gent/api/records/1.0/search/?dataset=sheep-tracking-gent&amp;q=">https://data.stad.gent/api/records/1.0/search/?dataset=sheep-tracking-gent&amp;q=</a>
+</li>
+<li>Static file download in 3 geo formats (GeoJSON, shapefile, kml) <a href="https://data.stad.gent/explore/dataset/sheep-tracking-gent/export/">https://data.stad.gent/explore/dataset/sheep-tracking-gent/export/</a>
+</li>
+</ul>
+<p><span class="mention">@Justine</span> Let’s check whether this (or an other suitable) sample dataset is available in WMS/WFS. I am not a GIS specialist myself, however Ghent operates a GeoServer (<a href="http://geoserver.org/">http://geoserver.org/</a>) where several hundreds layers of data are maintained by ao. the Data &amp; Information team that <span class="mention">@Justine</span> is part of.</p>
+<p><img alt="afbeelding" data-base62-sha1="nt9K9WUa8TFP5QCvwWuOgJDWytq" height="367" src="../../../images/a47dc289a3778d5c09a3e31ca4a1bd9234e6d7a8.png" width="205"/> <img alt="afbeelding" data-base62-sha1="3Fy3DoX09nnJclIEifTLwehoHq1" height="150" src="../../../images/19b8e3778bfc36b1a5bff755e1cb6a17fb1be409.png" width="188"/></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p>Thanks Tim. We will have a look and appreciate some OGC example data from <span class="mention">@Justine</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p>We found a date for our Hackathon: November 5th 2020,  9:00am-12:00. Happy to see you there <img alt=":slight_smile:" class="emoji" src="../../../images/slight_smile.png" title=":slight_smile:"/></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/461_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Adrian</div>
+          <div class="post_content">
+<p><span class="mention">@nicole.schubbe</span> <span class="mention">@schlifni</span> just to let you know that our test application server has been built and is ready to go.  We will put something in calendars and see what we can achieve before the actual Materportal Hackathon <img alt=":slight_smile:" class="emoji" src="../../../images/slight_smile.png" title=":slight_smile:"/></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">schlifni</div>
+          <div class="post_content">
+<p>Hi Everyone,</p>
+<p>happy new year to all!</p>
+<p>Just a short heads up that the manual/documentation for the Masterportal is now available in English: <a href="https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/dev/doc/" rel="nofollow noopener">https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/dev/doc/</a></p>
+<p>Have any of you thought about using the Masterportal for one of your portals?</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>The Graph Tracing Engine</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">The Graph Tracing Engine</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">dlutsVMM</div>
+          <div class="post_content">
+<p><strong>What does it do?</strong></p>
+<p>It is a microservice that is able to do tracing operations efficiently on large amounts of (geo) data. The Graph Tracing Engine (GTE) is able to load geospatial network data from a wide range of data sources. Through an API it executes tracing requests from users, websites and applications on the network data. The GTE is able to load data from different networks (for example water and sewage networks) and to do combined tracings over both networks while also taking into account filter options limiting the traceable network. Besides network data you can also load other geospatial data to automatically detect when the tracing result overlays this geospatial data, for example allowing for the detection of areas which are at risk due to spills of untreated sewage.</p>
+<p><strong>What does it solve?</strong></p>
+<p>At the Flanders environment agency (VMM) the GTE is implemented as part of the sewer Inventory web application. The goal of the Sewer Inventory is to support the development of an effective and cost-efficient Sewer Infrastructure in Flanders by bringing together sewer infrastructure data from the whole of Flanders. As part of the Sewer Inventory the GTE allows users to trace sewage water up- and downstream through the Flemish sewage network, it even allows to follow the sewage water after it has left the sewage system and entered the surface water system. The integration of the GTE in the Sewer Inventory web application gives the VMM the ability to offer to sewer managers an easy to use but powerful application for waste water infrastructure management and planning. Within VMM the GTE is also used in pollution incident management by allowing to quickly identify possible sources of pollution, predict where pollution will have a potential impact on the environment and respond by taking appropriate actions to prevent further damage.</p>
+<p>Besides in waste water management and emergency response to pollution incidents VMM will also use the algorithm as part of a Flanders wide sediment model. The GTE will be used to model existing links in sediment transport from the field, overland, through small rivers into the larger rivers and eventually in the sea. Through this integration of the GTE in the sediment model, water managers will be able to better identify measures that can be taken to reduce the negative impact of the sediment on the water quality of Flemish rivers and reduce the amount of sediment that needs to be removed from Flemish rivers each year. Within VMM we are also exploring the opportunities to use the GTE in the management of waterborne invasive species.</p>
+<p>The GTE is developed as one of the 11 challenges of the Interreg NWE project [BE-GOOD](<a href="https://www.nweurope.eu/" rel="nofollow noopener">https://www.nweurope.eu/</a> begood/). BE-GOOD is a cooperation between public sector organizations from North-West Europe aimed at stimulating the reuse of open public sector data by SME’s.</p>
+<p>More information about the GTE can be found on the Graph Tracing Engine <a href="https://github.com/VlaamseMilieumaatschappij/BE-GOOD---Graph-Tracing-Engine" rel="nofollow noopener">Github page</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p>Hi Dries,</p>
+<p>Awesome! Thanks for sharing and welcome to the community! <img alt=":tada:" class="emoji" src="../../../images/tada.png" title=":tada:"/></p>
+<p>Looks good. I’ll do some digging and get back to you if I have any questions.</p>
+<p>Feel free to also <a href="https://score.community/t/introduce-yourself/64">introduce yourself</a> to the wider community <img alt=":slight_smile:" class="emoji" src="../../../images/slight_smile.png" title=":slight_smile:"/></p>
+<p>Claus</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p><span class="mention">@sydsimpson</span> <span class="mention">@Adrian</span> <span class="mention">@dhaval</span> - I guess you already aware of this solution via BEGOOD? Is it something you are looking to reuse?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/315_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Ainali</div>
+          <div class="post_content">
+<p>Hi Dries! I guess this was the one you mentioned to me yesterday over lunch? It looks pretty cool and I like how explicit and detailed you are about the licenses of the different parts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">dlutsVMM</div>
+          <div class="post_content">
+<p>Hi <span class="mention">@Ainali</span>, thank you for your interest, however I think you are confusing met with somebody else. My lunch yesterday was a normal one with my colleagues at the Flanders Environment Agency. However we have been promoting the project a lot over the last year, so I am not suprised if somebody else has told you about it. Maybe you can give me an insight how you got to know the project outside of this thread on the SCORE community? Within BEGOOD we have a lot of partners from the North-West Europe region, some of whom are from the Netherlands.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/315_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Ainali</div>
+          <div class="post_content">
+<p>Aha, what a peculiar coincidence then. I was speaking with someone, possibly one of you colleagues, at the Connected Smart Cities Conference yesterday who mentioned that he worked on this project. We just talked briefly over a sandwich so I didn’t catch his name or business card.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">dlutsVMM</div>
+          <div class="post_content">
+<p>I do not immediatly who this mistery colleague could be. Anyway you can I am happy to answer any questions about the Graph Tracing Engine and the BEGOOD project in general.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/461_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Adrian</div>
+          <div class="post_content">
+<p><span class="mention">@claus</span> thank you for the message <img alt=":+1:" class="emoji" src="../../../images/+1.png" title=":+1:"/><img alt=":grinning:" class="emoji" src="../../../images/grinning.png" title=":grinning:"/> <span class="mention">@sydsimpson</span>  is this of any use <img alt=":thinking:" class="emoji" src="../../../images/thinking.png" title=":thinking:"/></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/132_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">sydsimpson</div>
+          <div class="post_content">
+<p>So this will, I guess, require a coherent water network defining.</p>
+<p>In England, this can be problematic as the sewer and waste water  network is the responsibility of private utility companies. Although we at the Council have access to this, it might cause difficulties in building the network.<br/>
+Having said this, the utility company (Yorkshire Water) will already be using various hydraulic models and networks.<br/>
+On top of this, the responsibility for investigating pollution incidents in water courses is the responsibility of the Environment Agency.</p>
+<p>Ideally a tool like this might be of use to citizens groups that are concerned about water quality and they often report the pollution incidents. However until the network data is made open, using the graph tracing tool won’t be possible.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">dlutsVMM</div>
+          <div class="post_content">
+<p>Hi <span class="mention">@sydsimpson</span>, thank you  for your response.  In Flanders we have a similar issue with our waste water network as in Engeland. Waste water is the responsibility of the local municipalities but they often contract private utility companies to manage the network for them. This results in a mosaic of networks managed by private entities and networks managed by muncipalities that all need to be connected. In Flanders we have brought together the data from all these actors in one database and are working with them to connect all these networks together.</p>
+<p>We are going through the trouble  of creating the complete database and transforming the dataset in a coherent network, because we want to improve upon the database we actually already had built over 30 years. We have a high level database that contains the whole of the Flemisch sewer infrastructure as a traceable network, however it lacks detail. In the high level database for example there is only drawn one sewer pipe in a street while the data from the local sewer manager (utility company or muncipality) contains three pipes that are drawn on the exact location of the pipes.</p>
+<p>However if we did not need to improve upon the existing database in our waste water information system project and just had to create a new traceable database another option would be opened up to come to a traceable network by the GTE. The GTE is built such that is able to load data from multiple datasets in multiple network formats and combine these internally in a traceable dataset. The GTE is able to internally make the connections between the networks from different utillity companies (obviously there are some limitations and this will likely not be as good as making a database with one coherent network). So you don’t need a lot of data tranformation and editing to be able to start tracing on sewer network data from different sources.</p>
+<p>I also want to add, to avoid confusion, the GTE is not a hydraulic modelling tool. It is designed to be used in use cases where a hydraulic model is not necessary (at least at first) and so that users who want to use the tool do not need detailed knowledge of hydraulics or the sewer system. Actually in Flanders (both at the Environment Agency and the municipalties) the main use case for the tracing algorithm is to aid in sewer planning. The Flanders Environment Agency uses it as part of the long term planning process and to assess applicatons for subsidies for new sewer projects. Municipalities use the tool for the planning of the local sewer infrastructure (which house do we want to connect, which streets, what type of sewer do we want, …) that will result in tasks for the private utility company that will design the sewers, built them and manage them. While in Flanders the responsibility for pollution incidents is at the regional level (due to our state structure is the region the highest level that deals with the Environement in Flanders) municipalities have also indicated that they also want to use the tool to talk with local actors about water pollution.</p>
+<p>I hope that this provides some more informaton.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

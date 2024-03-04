@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>DrukteRadar Amsterdam – Initial discussion</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">DrukteRadar Amsterdam – Initial discussion</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p><a class="onebox" href="https://acc.drukteradar.amsterdam.nl" rel="nofollow noopener" target="_blank">https://acc.drukteradar.amsterdam.nl</a></p>
+<p><span class="mention">@Amsterdatamas</span> Should this work ? Is there a login we can use to try? Any more info?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/65_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Amsterdatamas</div>
+          <div class="post_content">
+<p>user name: pipo<br/>
+password: pluto</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p>Looks nice, how do you get the data?<br/>
+Camera? Bluetooth tracking? …</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/65_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Amsterdatamas</div>
+          <div class="post_content">
+<p>a variety of data sources:</p>
+<ul>
+<li>image recognition of web cams (even on open webcams calling a simple services is not bad)</li>
+<li>blip data</li>
+<li>scraping google popular times</li>
+<li>public transport data</li>
+<li>traffic data</li>
+<li>open API’s</li>
+<li>trash can sensor data</li>
+</ul>
+<p>validate it with phone data and expert feedback<br/>
+modeling the noise is a crucial step that we are progressing in atm.</p>
+<p>a very relevant finding is that there is big correlation between number of people and number of trash -&gt; you dont need iot trash can bullshit + if it’s already there you can use it for modeling foot mobility</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p>Pretty cool and interesting.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/65_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Amsterdatamas</div>
+          <div class="post_content">
+<p>thanks, tool is available on github.</p>
+<p>my proposal is to work on something similar with Score, based on this.<br/>
+data behind it is used to plan operational processes like law enforcement andwaste management, and to get real time signalling in these processes.</p>
+<p>Let me know if you want to join and which info you need.<br/>
+<span class="mention">@Mikkel</span> and <span class="mention">@turegjorup</span>  what do you think about this?</p>
+<p>Tamas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/53_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Mikkel</div>
+          <div class="post_content">
+<p>Hi all,</p>
+<p>We’ve mentioned earlier that Aarhus is interested in the <strong>DrukteRadar / Congestion Radar</strong> that Amsterdam is building, and to see whether it can be successfully applied in Aarhus. We would therefore like to learn as much possible, both about the project itself and about the technical setup, database, data input, etc. Essentially everything that you feel like sharing! <img alt=":slight_smile:" class="emoji" src="../../../images/slight_smile.png" title=":slight_smile:"/></p>
+<p>Right now I know of the following information about the DrukteRadar:</p>
+<ul>
+<li>
+<p>A project already in the making within Amsterdam is an assignment by the administrative team to make a “crowdedness radar”, a city dashboard detecting and displaying crowdedness in various city areas, as well as live data about bicycle and parking occupancy, ongoing events and live traffic. The project will eventually draw on a large number of data sources, internally as well as externally</p>
+</li>
+<li>
+<p><a href="https://acc.drukteradar.amsterdam.nl/" rel="nofollow noopener">DrukteRadar</a> (U: pipo, P: pluto)</p>
+</li>
+<li>
+<p><a href="https://score.community/uploads/default/original/1X/4f4aa2212c7058e426ce8d1bb2be282c84992a47.pdf">Project presentation PDF</a> (in Dutch)</p>
+</li>
+<li>
+<p><a href="https://github.com/Amsterdam/city-dynamics" rel="nofollow noopener">GitHub repository</a> (is this correct?)</p>
+</li>
+<li>
+<p><a href="https://github.com/Amsterdam/city-dynamics/wiki/Opbouw-Drukteindex" rel="nofollow noopener">GitHub repository for the DrukteIndex / Congestion index</a> (however, a new pipeline / model is  apparently being worked on)</p>
+</li>
+</ul>
+<p>If there’s anything else that you can publish, send or point us in the right direction of, it would be much appreciated.</p>
+<p>Cheers, and thanks in advance,<br/>
+Mikkel</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/200_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">malinstoldt</div>
+          <div class="post_content">
+<p>Hi,<br/>
+I’ve read this thread to find out more about the DrukteRadar. Thanks putting the information together, Mikkel!</p>
+<p>Is it possible to get a presentation/PDF-file in English for those of us that are not fluent in Dutch? <span class="mention">@Amsterdatamas</span></p>
+<p>Then it would be easier to decide on Gothenburg’s interest in the project.</p>
+<p>Best regards,<br/>
+Malin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>As Ghent might be interested to replicate/co-develop I created a call for Drukteradar as a working group.</p>
+<aside class="quote quote-modified" data-post="1" data-topic="689">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" class="avatar" height="20" src="../../../images/149_2.png" width="20"/>
+<a href="https://score.community/t/drukteradar-congestion-radar-amsterdam/689">DrukteRadar / Congestion Radar (Amsterdam)</a> <a class="badge-wrapper bullet" href="/c/working-groups/new-working-groups"><span class="badge-category-parent-bg" style="background-color: #F7941D;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span class="badge-category clear-badge" data-drop-close="true" style="" title="Start a Working Group or do someone else’s Working Group proposal.">Propose new Working Groups</span></a>
+</div>
+<blockquote>
+    Hi <span class="mention">@h.niesing</span> <span class="mention">@Jaccobrouwer</span> <span class="mention">@Amsterdatamas</span> 
+Ghent is interested in replicating/co-developing the ‘Drukteradar’ project. We’d like to find out first what is feasible in SCORE. Particularly we’re interested in the perspective of crowdedness in the sense of ‘Impact of (large) events on mobility’. We see this possibly evolve from a standalone application for the mobility department, then to a wider group of other city stakeholders related to large events, then to reach further into citizen communica…
+  </blockquote>
+</aside>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p>Update on this, Ghent has comitted to the Drukteradar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>Further progress on Ghent’s ‘Crowd Flow Dashboard’ efforts can be followed in this community topic:</p>
+<aside class="quote quote-modified" data-post="19" data-topic="689">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" class="avatar" height="20" src="../../../images/149_2.png" width="20"/>
+<a href="https://score.community/t/people-density-flow-concept-working-group-progress-discussion/689/19">People Density &amp; Flow – Concept &amp; working group progress discussion</a> <a class="badge-wrapper bullet" href="/c/working-groups/crowd-flow-dashboard-drukteradar"><span class="badge-category-parent-bg" style="background-color: #F7941D;"></span><span class="badge-category-bg" style="background-color: #3AB54A;"></span><span class="badge-category clear-badge" data-drop-close="true" style="" title="In this solution working group Ghent is working with the Drukteradar team (Amsterdam) and several SCORE partners to define and develop and open source smart city solution to monitor and follow up ‘crowd flow’ &amp; ‘people density’ in a city. We explore use cases for specific involved city departments (Mobility, Tourism, Events, Police, …) This collaboration originated by the idea of Ghent replicating the Drukteradar initiative from Amsterdam, but the approach shifted to ‘crowd flow’ &amp; ‘people density’ after Ghent demoed Amsterdam’s Drukteradar to different internal stakeholders in Ghent.">Crowd Flow Dashboard (Drukteradar)</span></a>
+</div>
+<blockquote>
+    Together with <span class="mention">@Justine</span> and <span class="mention">@Pepijnhofstede</span> I presented the progress of this working group at the <a href="https://score.community/t/score-at-we-make-the-city/783">SCORE session at WeMakeTheCity</a> in Amsterdam. 
+I took the liberty of renaming the working group as ‘People Density &amp; Flow’ working group to keep up with our progress of the analysis of possibilities for replication and development. I have also updated our fact sheet a bit. 
+My slide deck for this SCORE presentation was in Dutch and I am sharing it here. But I also provide an English version in order t…
+  </blockquote>
+</aside>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

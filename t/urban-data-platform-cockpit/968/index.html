@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Urban Data Platform Cockpit</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">Urban Data Platform Cockpit</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p>The Urban Data Hub Team in Hamburg developed an <a href="https://geoportal-hamburg.de/udp-cockpit/#/" rel="nofollow noopener">Urban Data Platform Cockpit</a> (available in German and English). It evaluates and visualises the content and usage statistics of the “Urban Data Platform Hamburg”. You can e.g. find out how many datasets for a specific topic are available or browse the newest datasets published. By the way: The map component is the <a href="https://bitbucket.org/geowerkstatt-hamburg/masterportalapi/src/master/" rel="nofollow noopener">Masterportal API</a>, a very slim version of the Masterportal.</p>
+<p>Press release (German): <a href="https://www.hamburg.de/pressearchiv-fhh/14481628/2020-10-22-bsw-lgv-cockpit/" rel="nofollow noopener">https://www.hamburg.de/pressearchiv-fhh/14481628/2020-10-22-bsw-lgv-cockpit/</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/50_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">klantto</div>
+          <div class="post_content">
+<p>Hej Nicole. Is there a documentation on how this was setup and what datasets you started with and is being used most? any info would be interesting. Thanks. Have a great day. / kim</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/52_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">nicole.schubbe</div>
+          <div class="post_content">
+<p>Hi Kim,</p>
+<p>you find the UDP Cockpit in Bibucket:<br/>
+</p><aside class="onebox allowlistedgeneric">
+<header class="source">
+<img class="site-icon" height="192" src="../../../images/e889effc9333932c9cb629dc751350a16f041d22.png" width="192"/>
+<a href="https://bitbucket.org/geowerkstatt-hamburg/udp-cockpit/src/master/" rel="nofollow noopener" target="_blank">bitbucket.org</a>
+</header>
+<article class="onebox-body">
+<img class="thumbnail" height="" src="../../../images/missing_image.png" width=""/>
+<h3><a href="https://bitbucket.org/geowerkstatt-hamburg/udp-cockpit/src/master/" rel="nofollow noopener" target="_blank">Bitbucket</a></h3>
+</article>
+<div class="onebox-metadata">
+</div>
+<div style="clear: both"></div>
+</aside>
+<p>We used several data sources as awstats, our metadata catalogue and <a href="https://iot.hamburg.de/v1.0/Datastreams?%24count=true" rel="nofollow noopener">https://iot.hamburg.de/v1.0/Datastreams?$count=true</a> and created an Elastic Search Index. <span class="mention">@tino.wunderlich</span> will share the link with you.</p>
+<p>I hope that helps.<br/>
+Nicole</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">tino.wunderlich</div>
+          <div class="post_content">
+<p>Hey Kim,</p>
+<p>below I provide you some sample queries.</p>
+<p>URL of the index (only 10 hits): <a href="https://geodienste.hamburg.de/udh_dashboard/_search" rel="nofollow noopener">https://geodienste.hamburg.de/udh_dashboard/_search</a></p>
+<p>URL to get the first 10,000 hits: <a href="https://geodienste.hamburg.de/udh_dashboard/_search?q=*:*&amp;pretty&amp;filter_path=hits.hits._source&amp;size=10000" rel="nofollow noopener">https://geodienste.hamburg.de/udh_dashboard/_search?q=<em>:</em>&amp;pretty&amp;filter_path=hits.hits._source&amp;size=10000</a> (There are currently around 700,000 objects in the index)</p>
+<p>Search template (for the index) to get information on the datasets in November 2020 (including aggregations): <a href="https://geodienste.hamburg.de/udh_dashboard/_search/template?source=%7B%22id%22:%22udpc_query%22,%22params%22:%7B%22theme%22:%22%22,%22org%22:%22%22,%22from%22:%222020-11%22,%22to%22:%222020-11%22,%22category%22:%22datasets%22%7D%7D&amp;source_content_type=application/json" rel="nofollow noopener">https://geodienste.hamburg.de/udh_dashboard/_search/template?source={%22id%22:%22udpc_query%22,%22params%22:{%22theme%22:%22%22,%22org%22:%22%22,%22from%22:%222020-11%22,%22to%22:%222020-11%22,%22category%22:%22datasets%22}}&amp;source_content_type=application/json</a></p>
+<p>Please use a browser extension (e.g. Firefox --&gt; JSON) to make the JSON-format comfortable to read.</p>
+<p>Please let me/us know if you need more information! <img alt=":slight_smile:" class="emoji" src="../../../images/slight_smile.png" title=":slight_smile:"/></p>
+<p>Greetings Tino</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

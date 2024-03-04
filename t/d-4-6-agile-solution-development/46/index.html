@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>D 4.6 Agile solution development</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">D 4.6 Agile solution development</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p>At the WP lead meeting we agreed development models shouldn’t be too closely defined in beginning. Iterative process starting small and testing different ways to see which works best. With vary based on partners, their resources, the challenge and solution, how much overlap/work there is to do</p>
+<p>Collaboration can include face to face to keep community active, but it should be structured so that different developers, partners, and non-SCORE cities can easily incorporate themselves after projects have started to continue working on solutions.</p>
+<p>We should have a community manager for developers. This includes communication portal (slack?), have overview of who is collaborating with who, and monitor mutual quality assurance process. Also answering questions about the charter/guidelines on data publishing, etc.</p>
+<p>We could use Docker, Heroku and micro services containers to facilitate collaboration, and include a designated space for code-sharing. This means people can deploy software without having to set up own servers which avoids having to reconstruct specific environments, at least for the QA, test and prototype production.</p>
+<p>Two possible governance structures for solution development:</p>
+<ol>
+<li>Leader/follower<br/>
+One city pioneers, and actively develops solution with support of other subscriber cities. Pioneer helps subscribers to also integrate in their cities</li>
+<li>Full collaboration<br/>
+Full collaborative development between cities</li>
+</ol>
+<p>Three possible ways of developing together:</p>
+<ol>
+<li>Working on the same solution at the same time</li>
+<li>Working on different components which can later be integrated into a single solution</li>
+<li>Work on alternative approaches and solutions to solving the same problem</li>
+</ol>
+<p>This is a core component of SCORE - how would you set up the collaboration structure?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p>Here in Ghent we’ve embraced openshift. I know it’s enterprisey and such, but to obtain something sustainable we need support on the base images. So that patch mgmnt can be centrally managed. This way we can quickly develop and iterate, but the image produced fits into a corporate structure of the rest of our IT infrastructure.</p>
+<p>With the use of <a href="https://github.com/openshift/source-to-image">https://github.com/openshift/source-to-image</a> we create images.</p>
+<p>Seems better this way , instead of producing X dockers which can need particular updates at our most inconvenient times.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p>Ideally we’d all work together on the same solution.</p>
+<p>Unfortunatly this seems a lot of overhead.</p>
+<p>So would go for Leader/follower and Working on different components / Work on alternative approaches</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/3_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Boris</div>
+          <div class="post_content">
+<p>One of the main risks that I identify with leader/follower is that what the leader produces will be developed too specifically for their own infrastructure and legal context. Although quite some more overhead is involved Full Collaboration or collaboration based on components does force the collaborating parties to develop software that is at least portable across different contexts. Often this can mean that one-common core is developed and that perhaps different partners have to make their own docker-images etc.</p>
+<p>I’m hoping we can use the diversity of developing parties to force at least a bit of ‘abstraction’ and necessity of re-use.</p>
+<p>Thus I think the choice of using a specific architecture is a choice that should be made on a project level based. A project might for instance be a library.</p>
+<p>Or am I thinking to general and can we restrict this further?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">HansF</div>
+          <div class="post_content">
+<p>Architecture: sure , it can be library as well… openshift is not meant to be restrictive. It just ensures me low effort to get something live and keep it running , so for us it’s a more a sustainability thing.<br/>
+IF it’s a general docker fine, that’s also ine but we need to put some more effort in replication since wen need to do the source to image thing.</p>
+<p>I understand your concerns about making software too specific, and I agree that we should look out for this. The other edge of the sword is the feature creep of too many captains on a ship.<br/>
+Second: we should build our tools generic enough so that they can be broadly applied, if not for other cities, then in any case for our organisations.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

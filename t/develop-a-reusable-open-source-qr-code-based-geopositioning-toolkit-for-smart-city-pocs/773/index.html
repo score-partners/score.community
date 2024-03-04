@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Develop a reusable, open source, QR code based geopositioning toolkit for smart city POCs</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">Develop a reusable, open source, QR code based geopositioning toolkit for smart city POCs</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/456_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Juliette</div>
+          <div class="post_content">
+<p>I have moved your thread from proposed solution to here your dedicated solution working thread</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>I’ve e-mailed the following to Yunus Mayat (Bradford Council) after a discussion that emerged at the GeoNetBake working group last week.</p>
+<p>Might be interesting for <span class="mention">@Boris</span> <span class="mention">@claus</span> <span class="mention">@HD_Hamburg</span> <span class="mention">@nicole.schubbe</span> <span class="mention">@turegjorup</span> <span class="mention">@klantto</span> <span class="mention">@sydsimpson</span> and others.</p>
+<p>Cc <span class="mention">@Jefwillems</span> <span class="mention">@HansF</span> <span class="mention">@Justine</span> <span class="mention">@JoranVD</span></p>
+<blockquote>
+<p>Dear Yunus</p>
+<p>After our interesting discussion at the Aarhus partner meeting last week during &amp; after the working groups, I take the liberty of following up by e-mail.</p>
+<p>As I explained, Ghent is interested in exploring if we could join forces and set up, within the SCORE project, the development of a  <strong>reusable</strong> ,  <strong>open source, QR code based, “low tech” geolocating object toolkit</strong>  as a solution that enables smart cities to quickly set up IOT proof of concepts for a broad spectrum of use cases/challenges that are about:</p>
+<ul>
+<li>Movable/moving objects owned by city (or partners, or subcontractors), or fixed street furniture, … basically every useful item you find in a city that can be stickered with a QR code</li>
+<li>Actions/workflows/contact persons etc. linked to the object (eg. reporting actions by citizens, internal workflows eg. placing the item on public domain)</li>
+<li>Need to collect geolocation information on those objects (be it with limited accuracy +/- 5-10m, because of smartphone device geopositioning limits)</li>
+</ul>
+<p>Building the toolkit in a generic (and well documented) way from the start, adding tests (case by case) done by Ghent, Bradford, etc. as examples &amp; inspiration for other cities, we think virtually any city could benefit from such a reusable toolkit. The project potentially align very well with the vision and scope of SCORE.</p>
+<p>Some initial ideas, quick wins and advantages of the concept would be:</p>
+<ul>
+<li>‘Circumvent’ the need/threshold to develop full native apps. Where traditionally, QR codes are scanned within a static, in app workflow, in this concept we could try to fall back to a default QR reader, linking through the QR code to a simple web page, with just a couple of customizable buttons as very easy to use web page content.</li>
+<li>Such buttons could be customized codeless in a generic management interface, based on the type of object and the desired object related actions/workflows. Triggers and notification could be applied and configured (also codeless).</li>
+<li>Especially applicable for use cases where cities hesitate to invest immediately in location revealing sensors. A proof of concept based on the “low tech” that is QR codes might demonstrate the ROI, visualize the benefits, and convince decision makers to invest in actual sensors as next step in scaling the solution idea.</li>
+<li>Possibly link a QR code to a Linked Open Data URI. Using standardized schemas we might be able to make city objects not only interpretable by humans but also add link them to the web of things that are becoming interpretable by machines. This would lead to cost-efficiently build a preliminary Internet of (City) Things, each thing marked and identified with a QR sticker.</li>
+<li>For aggregating and visualizing the location information, the IOT Registry in SCORE could be reused as a building block.</li>
+</ul>
+<p>We believe in this idea being applied specifically for use cases where a city department wants to test the potential of a particular idea, getting involved in some quick &amp; dirty field testing (which would take only a couple of days), before deciding to initiate a full blown project where IOT location sensors, application development, business analysis, user testing, etc. are involved.</p>
+<p>Looking forward to your reaction.</p>
+<p>Please don’t hesitate to include in this e-mail discussion whoever in Bradford Council you think would be interested in joining this initiative.</p>
+</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/132_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">sydsimpson</div>
+          <div class="post_content">
+<p>Hi <span class="mention">@timvanachte</span>,</p>
+<p>There are proposals for Bradford Council’s Natural Flood Management schemes to use fixed point photography. QR codes might be very useful for this if located on the fixed camera post. See details here:<br/>
+<aside class="quote quote-modified" data-post="4" data-topic="697">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" class="avatar" height="20" src="../../../images/132_2.png" width="20"/>
+<a href="https://score.community/t/video-image-based-sensors-i-e-gully-sensors/697/4">Video/Image based sensors (i.e. Gully Sensors)</a> <a class="badge-wrapper bullet" href="/c/working-groups/new-working-groups"><span class="badge-category-parent-bg" style="background-color: #F7941D;"></span><span class="badge-category-bg" style="background-color: #808281;"></span><span class="badge-category clear-badge" data-drop-close="true" style="" title="Start a Working Group or do someone else’s Working Group proposal.">Propose new Working Groups</span></a>
+</div>
+<blockquote>
+<span class="mention">@Vbyrne</span> A subject Bradford is interested in and related to this - at least perhaps from the image recognition perspective is fixed point photography. 
+We have recently received details of a project in the Cairngorms which we might try to replicate for our NFM projects. 
+Maybe you know something about it? 
+ <a class="lightbox" data-download-href="https://score.community/uploads/default/043caf954a1a3009b897ad8884abebf7cfe60ce7" href="https://score.community/uploads/default/original/1X/043caf954a1a3009b897ad8884abebf7cfe60ce7.jpeg" title="Cairngorm_FPP.jpg">[Cairngorm_FPP]</a>
+</blockquote>
+</aside>
+</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>First call about this solution on 24 May 2019 in the afternoon. Participating: Ghent, Digipolis Ghent and Bradford.</p>
+<p>Anyone who would like to join the call or the working group, let me know.</p>
+<p>Cc <span class="mention">@Juliette</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/132_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">sydsimpson</div>
+          <div class="post_content">
+<p>Bradford has a definite use for QR codes for highlighting city heritage sites. So we’re still interested in this as a way to deliver them.<br/>
+I’ll see if we can join the call <img alt=":slightly_smiling_face:" class="emoji" src="../../../images/slightly_smiling_face.png" title=":slightly_smiling_face:"/></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>I’ve sent you an invitation to this 24 May call <span class="mention">@sydsimpson</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>From Ghent and Digipolis Ghent I’ve also invited <span class="mention">@Justine</span> and <span class="mention">@pjppauwels</span> to the first call about this solution.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/456_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Juliette</div>
+          <div class="post_content">
+<p>How was your first call? Any examples of possible use cases to share?</p>
+<p>What are the next steps?</p>
+<p><span class="mention">@timvanachte</span> <span class="mention">@sydsimpson</span> <span class="mention">@Justine</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>Our first working group call was on 24 May 2019.</p>
+<p>Since then Ghent has been looking into setting up the development of a codebase for prototypes. On the service design and workflow side we have been asking several city services what could be good uses for QR codes for them, in order to have a diverse collection of “user stories” ready from which we can develop a first working (and hopefully already versatile) prototype.</p>
+<p>Bradford organised an online demo today, 12 Sept 2019.</p>
+<p>And in the meantime <span class="mention">@Jefwillems</span> has started development of an open source prototype.</p>
+<p><strong>From Ghent we would now like to proceed by asking all partners in the QR code solution workgroup to share  with us at least one use case for QR codes in your city.</strong> Ghent is then going to try looking into demonstrating the versality of our initial codebase by setting up a demo where completely different use cases are set up using the same building blocks.</p>
+<p>Please add them in the doc below. Just copy paste the template, fill out the fields and add your use case to the bottom of the doc.<br/>
+<aside class="onebox allowlistedgeneric">
+<header class="source">
+<a href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=1209600&amp;continue=https:%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1uHFuU7ksOKlGBJqeh5-Hx17NkEeaYqCX8EVshLU0kCg%2Fedit&amp;followup=https:%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1uHFuU7ksOKlGBJqeh5-Hx17NkEeaYqCX8EVshLU0kCg%2Fedit&amp;ltmpl=docs" rel="noopener" target="_blank">accounts.google.com</a>
+</header>
+<article class="onebox-body">
+<img class="thumbnail" height="" src="../../../images/missing_image.png" width=""/>
+<h3><a href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=1209600&amp;continue=https:%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1uHFuU7ksOKlGBJqeh5-Hx17NkEeaYqCX8EVshLU0kCg%2Fedit&amp;followup=https:%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1uHFuU7ksOKlGBJqeh5-Hx17NkEeaYqCX8EVshLU0kCg%2Fedit&amp;ltmpl=docs" rel="noopener" target="_blank">Google Documenten: maak en bewerk documenten online, helemaal gratis.</a></h3>
+</article>
+<div class="onebox-metadata">
+</div>
+<div style="clear: both"></div>
+</aside>
+</p>
+<p>We’re looking forward to present the proceedings, the different use cases and demo the prototype at the next partner meeting.</p>
+<aside class="onebox allowlistedgeneric">
+<header class="source">
+<img class="site-icon" height="32" src="../../../images/missing_image.png" width="32"/>
+<a href="https://github.com/lab9k/qr_code_toolkit" rel="noopener" target="_blank">GitHub</a>
+</header>
+<article class="onebox-body">
+<img class="thumbnail onebox-avatar" height="400" src="../../../images/009ab33d2a92c3a2d9c5298794cf2f06452faa4b.png" width="400"/>
+<h3><a href="https://github.com/lab9k/qr_code_toolkit" rel="noopener" target="_blank">lab9k/qr_code_toolkit</a></h3>
+<p>Contribute to lab9k/qr_code_toolkit development by creating an account on GitHub.</p>
+</article>
+<div class="onebox-metadata">
+</div>
+<div style="clear: both"></div>
+</aside>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/373_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Vbyrne</div>
+          <div class="post_content">
+<p>Hi, I’ve looked into our use of QR codes and have found none for the last decade.<br/>
+Unfortunately I’ve asked many departments (Media to Transportation) about our use of using QR codes and they have strongly recommended to us to not use this form of communication. They have been used in the past for transportation advertisement of timetables and advert posters but caused a barrier to data, when trying to advertise to a wide range of users. It would be interesting to understand is there a different outlook of use from other areas of the region.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">brynskov</div>
+          <div class="post_content">
+<p>That’s a global observation since a decade now. QR codes are good for certain purposes, but needs excellent service design.</p>
+<p>A difference between Asia and RoW is that mobile phones out East automatically detected QR codes in the native camera app early on, not so in the West, where a dedicated reader was needed. That barrier has been lowered recently since iPhones and most Android<br/>
+phones now have adopted the Asian function.</p>
+<p>Still, QR codes isn’t a magic bullet.</p>
+<p>My 2 cents.</p>
+<p>Cheers,</p>
+<p>M</p>
+<details class="elided">
+<summary title="Show trimmed content">···</summary>
+<p>On 11 Oct 2019, at 16.28, Vincent Byrne via SCORE community <a href="mailto:noreply@score.community">noreply@score.community</a> wrote:</p>
+<blockquote>
+<p><img alt="Vbyrne" height="45" src="../../../images/202_2.png" width="45"/><br/>
+<a href="https://score.community/u/vbyrne">Vbyrne</a><br/>
+<a href="https://score.community/u/vbyrne"><br/>
+Vincent Byrne</a></p>
+<p>October 11<br/>
+Hi, I’ve looked into our use of QR codes and have found none for the last decade.</p>
+<p>Unfortunately I’ve asked many departments (Media to Transportation) about our use of using QR codes and they have strongly recommended to us to not use this form of communication. They have been used in the past for transportation advertisement of timetables<br/>
+and advert posters but caused a barrier to data, when trying to advertise to a wide range of users. It would be interesting to understand is there a different outlook of use from other areas of the region.</p>
+</blockquote>
+<blockquote>
+<hr/>
+<p><a href="https://score.community/t/develop-a-reusable-open-source-qr-code-based-geopositioning-toolkit-for-smart-city-pocs/773/10">Visit Topic</a> or reply to this email to respond.</p>
+</blockquote>
+<blockquote>
+<hr/>
+<h4>In Reply To</h4>
+<p><img alt="timvanachte" height="45" src="../../../images/149_2.png" width="45"/><br/>
+<a href="https://score.community/u/timvanachte">timvanachte</a></p>
+<p>September 12<br/>
+Our first working group call was on 24 May 2019. Since then Ghent has been looking into setting up the development of a codebase for prototypes. On the service design and workflow side we have been asking several city services<br/>
+what could be good uses for QR codes for them, in order to have a divers…</p>
+</blockquote>
+<blockquote>
+<hr/>
+<p><a href="https://score.community/t/develop-a-reusable-open-source-qr-code-based-geopositioning-toolkit-for-smart-city-pocs/773/10">Visit Topic</a> or reply to this email to respond.</p>
+</blockquote>
+<blockquote>
+<p>You are receiving this because you enabled mailing list mode.</p>
+</blockquote>
+<blockquote>
+<p>To unsubscribe from these emails, <a href="https://score.community/email/unsubscribe/3fbad77ca61e632b57feab46cf2076ec0d261ce5d04b34f165332e60d1a6ad72"><br/>
+click here</a>.</p>
+</blockquote>
+</details>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/149_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">timvanachte</div>
+          <div class="post_content">
+<p>That’s interesting. In our country we’ve seen QRs -after indeed mostly failed as a tool for all kinds of communication purposes- being given a second chance in the mainstream now for fast payments (within payment apps), and it seems to lift off.</p>
+<p>I like <span class="mention">@brynskov</span>’s comment about the recent adoption of QR features in the native camera apps. That makes a difference. It’s one of the reasons why are building the tech not within app frameworks (big barrier to ask people to install your app for simple tasks) but with URLs, the QR forming a trigger/lead into your web app. If your web app manages to show extremely simple functionality (just a couple of buttons, possibly some other simple inputs) and if indeed the QR reflex gets more widely adopted, we want to validate QR’s usefulness to anonymous (citizen) and authorized (city personnel) workflows. Especially the cases where the device location information (geolocation estimation with timestamp) is valuable in combination with the object that is tagged with a (unique) QR.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/132_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">sydsimpson</div>
+          <div class="post_content">
+<p>Yunus has asked me to share his QR Code presentation that he gave at the partner meeting in Bergen:</p>
+<p><a class="attachment" href="https://score.community/uploads/default/original/1X/d542ea5486ea1902488e3029adc7f63675a87a65.pptx">QR Code.pptx</a> (2.0 MB)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/461_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">Adrian</div>
+          <div class="post_content">
+<p>Hello all,<br/>
+I asked about the business case for the QR Code toolkit that Bradford Council’s Street Cleansing department has implemented and unfortunately there isn’t one.  When I pressed to ask what the savings were I received the following.</p>
+<p>On the monetary thing I think this is something to consider. 10 years of austerity, lack of investment in technology and cuts still being delivered has led to undercutting of the foundations of services, so that when weaknesses are apparent or risks emerge the only question is to spend more to try and fix the problems of poor financial decision making or failure to invest when the times were good.</p>
+<p>If the ‘calculator’ for the success of SCORE only talks about savings for the future,   its not taking into account the economic savings situation or it misses the new reality which is about improving the resilience of a service after years of ‘hacking away’, or by exploiting an opportunity to do a piece of work for little cost, that will have value in the future which you could argue this project meets both criteria</p>
+<p>Look at other projects and see if they are top down or bottom-up. Top down is probably because of a political or economic decision made, the bottom-up are probably about exploiting opportunities.</p>
+<p>I do see where the author of the email is coming from.  The department has seized a low cost solution that perhaps wouldn’t have existed prior to the SCORE project and whilst there aren’t any financial savings it will provide service resilience.</p>
+<p>Hope that makes sense and happy to have a debate <img alt=":slight_smile:" class="emoji" src="../../../images/slight_smile.png" title=":slight_smile:"/></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p>Thanks for sharing, <span class="mention">@Adrian</span>!</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

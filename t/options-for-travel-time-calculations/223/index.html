@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Options for Travel Time Calculations</title>
+    <link rel="stylesheet" href="../../../archived.css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="title-span">
+        <a href="../../../">
+          <img src="../../../images/site-logo.png" height="66" alt="SCORE community" id="site-logo" />
+        </a>
+      </div>
+    </header>
+
+    <div class="main">
+    <div class="archive-span">A partial archive of https://score.community/ as of Monday March 04, 2024.</div>
+    <h1 class="topic-title">Options for Travel Time Calculations</h1>
+            <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/133_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">h.niesing</div>
+          <div class="post_content">
+<p>Dear colleagues, an update:</p>
+<p>We are looking into how we are going to build the Travel Time Tool application.</p>
+<p>I am currently trying to get the information about the project, which is under development internally.<br/>
+My focus is on understanding the level of openness, the development and utilisation costs involved in the current project that is running in Amsterdam.</p>
+<p>The current plan is to develop the Travel Time Tool based on the (proprietary) API of iGeolise that can calculate the time to travel from any point using multiple modes of transport.</p>
+<p>The costs of using the API  from iGeolise is still unclear, it will likely be per calculation. Until now it is not jet clear, but we will keep you updated.</p>
+<p>Gr Hugo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/12_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">pjppauwels</div>
+          <div class="post_content">
+<p>Hi Hugo, in regards to T3.7 Definition of requirement specifications and 4.2 Assessment of generic building blocks for solutions, can we justify in this particular project we chose to build on top of iGeolise?</p>
+<p>Eg. I don’t think Interreg is eager to pay license for proprietary software in a project that emphasises on using open data and open source?</p>
+<p>Well maybe they will if we can validate why this is necessary.<br/>
+I see three options you can push forward:</p>
+<ol>
+<li>
+<p>You hook up to something out-of-the-box and inject your data. Eg. iGeolise.<br/>
+Pro: fastest option here, least overhead for cities.<br/>
+Con: not really open, still a lot of dependencies.</p>
+</li>
+<li>
+<p>You set it up yourself using open source tools like <a href="http://www.opentripplanner.org/">http://www.opentripplanner.org/</a><br/>
+Pro: You control and own it, everything could be open source and modular for your open source community to build upon.<br/>
+Con: A lot of overhead (gathering own public transport and other mobility data per city, this might be too much for this project)</p>
+</li>
+<li>
+<p>(and this would maybe be my go-to solution) You procure a company that builds open source as a service to handle it for you.</p>
+</li>
+</ol>
+<p>Eg. Plannerstack <a href="http://www.plannerstack.com/">http://www.plannerstack.com/</a> a Dutch company or <a href="https://www.navitia.io/">https://www.navitia.io/</a> (French) can setup open API’s based on open trip planner for the consortium to use for mobility solutions, including isochronic mapping like you suggest here.<br/>
+Pro: you do not have to the grunt work yourself, but even after the contract is done, you can host it yourself, make the code open,…<br/>
+Cons: Red tape procurement wise.</p>
+<p>If we chose option 1, we should be able to explain why we’re not doing the other two.</p>
+<p>This is my personal opinion, would love some feedback from <span class="mention">@claus</span>, <span class="mention">@Boris</span>, <span class="mention">@HansF</span>, <span class="mention">@thimo.thoeye</span>, <span class="mention">@Amsterdatamas</span> and <span class="mention">@JoranVD</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<aside class="quote no-group" data-post="2" data-topic="223">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" class="avatar" height="20" src="../../../images/12_1.png" width="20"/> pjppauwels:</div>
+<blockquote>
+<p>Eg. I don’t think Interreg is eager to pay license for proprietary software in a project that emphasises on using open data and open source?</p>
+</blockquote>
+</aside>
+<p>Would be fine by Interreg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p><span class="mention">@h.niesing</span> any preference from Amsterdam’s side on the options Pieter-Jan suggested?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/12_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">pjppauwels</div>
+          <div class="post_content">
+<p>Just had a discussion with our internal team. And we would love to have a discussion on the level of openness with at least Amsterdam, but other project partners as well when given the opportunity.</p>
+<p>Do we want to have just the front-end open, or the back-end as well? And what with the connected systems? I want to do this on an abstract level.</p>
+<p>In same meeting <span class="mention">@HansF</span> was eager to see how far we need to go as a city to also make the back-end open source and whether this has been done before by a city or government. I’ll try and help him with this assessment.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/133_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">h.niesing</div>
+          <div class="post_content">
+<p>Dear colleagues,</p>
+<p>Last Wednesday 2nd May I had a meeting with Chennard Testing from Amsterdam municipality.<br/>
+He is leading the progress on the implementation of the Travel Time Tool  (TTT) in Amsterdam.<br/>
+This process is on the go, next week he is negotiating with the company about the conditions, costs for the different users.</p>
+<p>These will mainly be different housing agencies, the expat service for Amsterdam and other organisations and businesses where issues as:</p>
+<ul>
+<li>‘travel time between work and living’ or</li>
+<li>‘demonstration that living near Amsterdam can be a better alternative than inside the city is important. At least for the municipality of Amsterdam these issues are important to keep the pressure on the city acceptable.</li>
+</ul>
+<p>Chennard explained me that the TTT is open to a high degree, not fully.<br/>
+The interaction between the sources and the iGeolise algorithms box is open, as well as the results display.<br/>
+In parallel a open version of the calculation algorithms could be developed, to be discussed.<br/>
+Amsterdam needs TTT and the first system version will be up and running in June (is the plan).</p>
+<p>I would like to propose a Telco after next week (week 14-18 May) when Chennard has more information and we can decide about the SCORE developments of the TTT.</p>
+<p>Kind regards,</p>
+<p>Hugo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p>Hi <span class="mention">@h.niesing</span> thanks for the update! Sounds promising.</p>
+<p>I think the suggestion for a call is a great idea. Here’s <a href="https://doodle.com/poll/xgss4i425fx6iqyh"><strong>a doodle</strong></a> - <span class="mention">@pjppauwels</span> &amp; <span class="mention">@HansF</span>. Anyone else to invite to the call?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/12_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">pjppauwels</div>
+          <div class="post_content">
+<p>On Ghent side, definitely Martine, Bart Rosseau and <span class="mention">@JoranVD</span>. Joran can you check for Bart?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/{size}.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">JoranVD</div>
+          <div class="post_content">
+<p>On it!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/133_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">h.niesing</div>
+          <div class="post_content">
+<p>Hello Claus,</p>
+<p>Yes <span class="mention">@Boris</span> and Chennard Testing (shall I ask him?).<br/>
+Greets</p>
+<p>Hugo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post_container">
+        <div class="avatar_container">
+          <img src="../../../images/363_2.png" class="avatar" />
+        </div>
+        <div class="post">
+          <div class="user_name">claus</div>
+          <div class="post_content">
+<p>Call fixed for 22nd at 10am. Look forward to discussing with you all then.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
